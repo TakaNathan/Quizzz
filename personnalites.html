@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="quiz.js" defer></script>
+    <script src="personnalites.js" defer></script>
+    <title>Personnalités Historiques</title>
+</head>
+<body class="questions">
+    <header>
+        <h2 style="font-size: 40px;">Quiz sur les Personnalités</h2>
+        <div>
+            <button type="button" id="home" onclick="window.location.href='index.html'" class="nav-in"> Accueil </button>
+            <button type="button" id="btn-Capital" onclick="window.location.href='capitales.html'" class="nav-in"> Capitales </button>
+            <button type="button" onclick="window.location.href='sciences.html'" class="nav-in"> Sciences</button>
+            <button type="button" onclick="window.location.href='geographie.html'" class="nav-in"> Geographie </button>
+        </div>
+        </header>
+    <div class="content">
+        <nav></nav>
+        <main>
+            <form id="questionformperso">
+
+                <!-- FACILE -->
+
+                <div id="question1" class="question-bloc">
+                    <p class="question-texte">1. Quel scientifique a découvert la gravité en observant une pomme tomber ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q1" value="Galilée"> Galilée</label></li>
+                        <li><label><input type="radio" name="q1" value="Isaac Newton"> Isaac Newton</label></li>
+                        <li><label><input type="radio" name="q1" value="Albert Einstein"> Albert Einstein</label></li>
+                        <li><label><input type="radio" name="q1" value="Nikola Tesla"> Nikola Tesla</label></li>
+                    </ul>
+                </div>
+
+                <div id="question2" class="question-bloc">
+                    <p class="question-texte">2. Qui a peint la Joconde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q2" value="Michel-Ange"> Michel-Ange</label></li>
+                        <li><label><input type="radio" name="q2" value="Raphaël"> Raphaël</label></li>
+                        <li><label><input type="radio" name="q2" value="Léonard de Vinci"> Léonard de Vinci</label></li>
+                        <li><label><input type="radio" name="q2" value="Botticelli"> Botticelli</label></li>
+                    </ul>
+                </div>
+
+                <div id="question3" class="question-bloc">
+                    <p class="question-texte">3. Qui était le premier président des États-Unis ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q3" value="Abraham Lincoln"> Abraham Lincoln</label></li>
+                        <li><label><input type="radio" name="q3" value="Thomas Jefferson"> Thomas Jefferson</label></li>
+                        <li><label><input type="radio" name="q3" value="Benjamin Franklin"> Benjamin Franklin</label></li>
+                        <li><label><input type="radio" name="q3" value="George Washington"> George Washington</label></li>
+                    </ul>
+                </div>
+
+                <div id="question4" class="question-bloc">
+                    <p class="question-texte">4. Quel conquérant a fondé un empire s'étendant de la Grèce à l'Inde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q4" value="Jules César"> Jules César</label></li>
+                        <li><label><input type="radio" name="q4" value="Gengis Khan"> Gengis Khan</label></li>
+                        <li><label><input type="radio" name="q4" value="Napoléon Bonaparte"> Napoléon Bonaparte</label></li>
+                        <li><label><input type="radio" name="q4" value="Alexandre le Grand"> Alexandre le Grand</label></li>
+                    </ul>
+                </div>
+
+                <div id="question5" class="question-bloc">
+                    <p class="question-texte">5. Qui a inventé le téléphone ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q5" value="Thomas Edison"> Thomas Edison</label></li>
+                        <li><label><input type="radio" name="q5" value="Nikola Tesla"> Nikola Tesla</label></li>
+                        <li><label><input type="radio" name="q5" value="Alexander Graham Bell"> Alexander Graham Bell</label></li>
+                        <li><label><input type="radio" name="q5" value="Guglielmo Marconi"> Guglielmo Marconi</label></li>
+                    </ul>
+                </div>
+
+                <!-- INTERMÉDIAIRE -->
+
+                <div id="question6" class="question-bloc">
+                    <p class="question-texte">6. Quelle reine égyptienne était connue pour ses relations avec Jules César et Marc Antoine ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q6" value="Néfertiti"> Néfertiti</label></li>
+                        <li><label><input type="radio" name="q6" value="Hatshepsout"> Hatshepsout</label></li>
+                        <li><label><input type="radio" name="q6" value="Cléopâtre VII"> Cléopâtre VII</label></li>
+                        <li><label><input type="radio" name="q6" value="Tiyi"> Tiyi</label></li>
+                    </ul>
+                </div>
+
+                <div id="question7" class="question-bloc">
+                    <p class="question-texte">7. Quel philosophe grec a été condamné à mort par empoisonnement à la ciguë ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q7" value="Platon"> Platon</label></li>
+                        <li><label><input type="radio" name="q7" value="Aristote"> Aristote</label></li>
+                        <li><label><input type="radio" name="q7" value="Socrate"> Socrate</label></li>
+                        <li><label><input type="radio" name="q7" value="Épicure"> Épicure</label></li>
+                    </ul>
+                </div>
+
+                <div id="question8" class="question-bloc">
+                    <p class="question-texte">8. Qui a rédigé la théorie de l'évolution des espèces par sélection naturelle ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q8" value="Louis Pasteur"> Louis Pasteur</label></li>
+                        <li><label><input type="radio" name="q8" value="Gregor Mendel"> Gregor Mendel</label></li>
+                        <li><label><input type="radio" name="q8" value="Charles Darwin"> Charles Darwin</label></li>
+                        <li><label><input type="radio" name="q8" value="Carl Linné"> Carl Linné</label></li>
+                    </ul>
+                </div>
+
+                <div id="question9" class="question-bloc">
+                    <p class="question-texte">9. Quel chef militaire a mené la Révolution cubaine aux côtés de Fidel Castro ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q9" value="Hugo Chávez"> Hugo Chávez</label></li>
+                        <li><label><input type="radio" name="q9" value="Ho Chi Minh"> Ho Chi Minh</label></li>
+                        <li><label><input type="radio" name="q9" value="Ernesto Che Guevara"> Ernesto Che Guevara</label></li>
+                        <li><label><input type="radio" name="q9" value="Mao Zedong"> Mao Zedong</label></li>
+                    </ul>
+                </div>
+
+                <div id="question10" class="question-bloc">
+                    <p class="question-texte">10. Quelle infirmière britannique est considérée comme la fondatrice des soins infirmiers modernes ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q10" value="Marie Curie"> Marie Curie</label></li>
+                        <li><label><input type="radio" name="q10" value="Edith Cavell"> Edith Cavell</label></li>
+                        <li><label><input type="radio" name="q10" value="Clara Barton"> Clara Barton</label></li>
+                        <li><label><input type="radio" name="q10" value="Florence Nightingale"> Florence Nightingale</label></li>
+                    </ul>
+                </div>
+
+                <!-- DIFFICILE -->
+
+                <div id="question11" class="question-bloc">
+                    <p class="question-texte">11. Quel sultan ottoman a conquis Constantinople en 1453 ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q11" value="Soliman le Magnifique"> Soliman le Magnifique</label></li>
+                        <li><label><input type="radio" name="q11" value="Mehmed II"> Mehmed II</label></li>
+                        <li><label><input type="radio" name="q11" value="Bajazet Ier"> Bajazet Ier</label></li>
+                        <li><label><input type="radio" name="q11" value="Selim Ier"> Selim Ier</label></li>
+                    </ul>
+                </div>
+
+                <div id="question12" class="question-bloc">
+                    <p class="question-texte">12. Quel mathématicien perse a introduit le concept de l'algèbre au IXe siècle ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q12" value="Omar Khayyam"> Omar Khayyam</label></li>
+                        <li><label><input type="radio" name="q12" value="Al-Biruni"> Al-Biruni</label></li>
+                        <li><label><input type="radio" name="q12" value="Ibn Rushd"> Ibn Rushd</label></li>
+                        <li><label><input type="radio" name="q12" value="Al-Khwarizmi"> Al-Khwarizmi</label></li>
+                    </ul>
+                </div>
+
+                <div id="question13" class="question-bloc">
+                    <p class="question-texte">13. Quelle impératrice a régné sur la Chine de 1861 à 1908, souvent appelée "Dragon Lady" ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q13" value="Wu Zetian"> Wu Zetian</label></li>
+                        <li><label><input type="radio" name="q13" value="Cixi"> Cixi</label></li>
+                        <li><label><input type="radio" name="q13" value="Dowager Longyu"> Dowager Longyu</label></li>
+                        <li><label><input type="radio" name="q13" value="Fu Hao"> Fu Hao</label></li>
+                    </ul>
+                </div>
+
+                <div id="question14" class="question-bloc">
+                    <p class="question-texte">14. Quel amiral japonais a planifié l'attaque de Pearl Harbor en 1941 ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q14" value="Hideki Tojo"> Hideki Tojo</label></li>
+                        <li><label><input type="radio" name="q14" value="Yamamoto Isoroku"> Yamamoto Isoroku</label></li>
+                        <li><label><input type="radio" name="q14" value="Soemu Toyoda"> Soemu Toyoda</label></li>
+                        <li><label><input type="radio" name="q14" value="Nobutake Kondo"> Nobutake Kondo</label></li>
+                    </ul>
+                </div>
+
+                <div id="question15" class="question-bloc">
+                    <p class="question-texte">15. Qui était le premier roi à unifier les royaumes d'Égypte haute et basse vers 3100 av. J.-C. ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q15" value="Ramsès II"> Ramsès II</label></li>
+                        <li><label><input type="radio" name="q15" value="Toutânkhamon"> Toutânkhamon</label></li>
+                        <li><label><input type="radio" name="q15" value="Narmer"> Narmer</label></li>
+                        <li><label><input type="radio" name="q15" value="Akhenaton"> Akhenaton</label></li>
+                    </ul>
+                </div>
+
+                <!-- IMPOSSIBLE -->
+
+                <div id="question16" class="question-bloc">
+                    <p class="question-texte">16. Quel général carthaginois a franchi les Alpes avec des éléphants pour attaquer Rome ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q16" value="Hamilcar Barca"> Hamilcar Barca</label></li>
+                        <li><label><input type="radio" name="q16" value="Hasdrubal"> Hasdrubal</label></li>
+                        <li><label><input type="radio" name="q16" value="Hannibal Barca"> Hannibal Barca</label></li>
+                        <li><label><input type="radio" name="q16" value="Magon Barca"> Magon Barca</label></li>
+                    </ul>
+                </div>
+
+                <div id="question17" class="question-bloc">
+                    <p class="question-texte">17. Quel roi de Perse a envahi la Grèce lors de la bataille des Thermopyles en 480 av. J.-C. ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q17" value="Darius Ier"> Darius Ier</label></li>
+                        <li><label><input type="radio" name="q17" value="Cambyse II"> Cambyse II</label></li>
+                        <li><label><input type="radio" name="q17" value="Xerxès Ier"> Xerxès Ier</label></li>
+                        <li><label><input type="radio" name="q17" value="Artaxerxès Ier"> Artaxerxès Ier</label></li>
+                    </ul>
+                </div>
+
+                <div id="question18" class="question-bloc">
+                    <p class="question-texte">18. Quelle mathématicienne indienne, surnommée "calculatrice humaine", a résolu en 1980 la multiplication de deux nombres à 13 chiffres en 28 secondes ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q18" value="Maryam Mirzakhani"> Maryam Mirzakhani</label></li>
+                        <li><label><input type="radio" name="q18" value="Shakuntala Devi"> Shakuntala Devi</label></li>
+                        <li><label><input type="radio" name="q18" value="Srinivasa Ramanujan"> Srinivasa Ramanujan</label></li>
+                        <li><label><input type="radio" name="q18" value="Manjul Bhargava"> Manjul Bhargava</label></li>
+                    </ul>
+                </div>
+
+                <div id="question19" class="question-bloc">
+                    <p class="question-texte">19. Quel philosophe présocratique affirmait que tout est composé d'eau comme élément primordial ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q19" value="Anaximandre"> Anaximandre</label></li>
+                        <li><label><input type="radio" name="q19" value="Héraclite"> Héraclite</label></li>
+                        <li><label><input type="radio" name="q19" value="Pythagore"> Pythagore</label></li>
+                        <li><label><input type="radio" name="q19" value="Thalès de Milet"> Thalès de Milet</label></li>
+                    </ul>
+                </div>
+
+                <div id="question20" class="question-bloc">
+                    <p class="question-texte">20. Quel amiral ottoman a remporté la bataille de Djerba en 1560 contre la flotte chrétienne ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q20" value="Barberousse"> Barberousse</label></li>
+                        <li><label><input type="radio" name="q20" value="Piyale Pacha"> Piyale Pacha</label></li>
+                        <li><label><input type="radio" name="q20" value="Turgut Reis"> Turgut Reis</label></li>
+                        <li><label><input type="radio" name="q20" value="Kemal Reis"> Kemal Reis</label></li>
+                    </ul>
+                </div>
+
+                <div class="button">
+                    <p id="scorePerso" class="score"></p>
+                    <p>
+                        <button type="submit" id="btn-valider-Perso" class="btn-val"> Valider mes réponses</button>
+                        <button type="submit" id="btn-reset-Perso" class="btn-res"> Recommencer </button>
+                    </p>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+            <div class="footer-content">
+            <p class="footer-email">
+                📧 <a href="mailto:nathantaka61@gmail.com" target="_blank">nathantaka61@gmail.com</a>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/TakaNathan" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" width="22" height="22">
+                </a>
+                <a href="https://instagram.com/mr_tnt237" target="_blank" aria-label="Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" width="22" height="22">
+                </a>
+                <a href="https://x.com/MrTNT237" target="_blank" aria-label="X (Twitter)">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="22" height="22">
+                </a>
+            <a href="https://linkedin.com/in/nathan-taka-3999683b3" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" width="22" height="22">
+                </a>
+            </div>
+            <p class="footer-copy">© 2026 Nathan Taka Tsaga — Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="quiz.js" defer></script>
+    <script src="capitales.js" defer></script>
+    <title>Questions</title>
+</head>
+<body class="questions">
+    <header>
+        <h2 style="font-size: 40px;">Quiz sur les Capitales</h2>
+        <div>
+            <button type="button" id="home" onclick="window.location.href='index.html'" class="nav-in"> Accueil </button>
+            <button type="button" id="btn-Perso" onclick="window.location.href='personnalites.html'" class="nav-in"> Personnalités   </button>
+            <button type="button" onclick="window.location.href='sciences.html'" class="nav-in"> Sciences</button>
+            <button type="button" onclick="window.location.href='geographie.html'" class="nav-in"> Geographie </button>
+        </div>
+        </header>
+    <div class="content">
+        <nav>
+            
+        </nav>
+        <main>
+            <form id="questionform">
+                <!-- FACILE -->
+
+                <div id="question1" class="question-bloc">
+                    <p class="question-texte">1. Quelle est la capitale de la France ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q1" value="Lyon"> Lyon</label></li>
+                        <li><label><input type="radio" name="q1" value="Marseille"> Marseille</label></li>
+                        <li><label><input type="radio" name="q1" value="Paris"> Paris</label></li>
+                        <li><label><input type="radio" name="q1" value="Bordeaux"> Bordeaux</label></li>
+                    </ul>
+                </div>
+
+                <div id="question2" class="question-bloc">
+                    <p class="question-texte">2. Quelle est la capitale de l'Italie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q2" value="Milan"> Milan</label></li>
+                        <li><label><input type="radio" name="q2" value="Rome"> Rome</label></li>
+                        <li><label><input type="radio" name="q2" value="Naples"> Naples</label></li>
+                        <li><label><input type="radio" name="q2" value="Turin"> Turin</label></li>
+                    </ul>
+                </div>
+
+                <div id="question3" class="question-bloc">
+                    <p class="question-texte">3. Quelle est la capitale du Japon ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q3" value="Osaka"> Osaka</label></li>
+                        <li><label><input type="radio" name="q3" value="Tokyo"> Tokyo</label></li>
+                        <li><label><input type="radio" name="q3" value="Kyoto"> Kyoto</label></li>
+                        <li><label><input type="radio" name="q3" value="Hiroshima"> Hiroshima</label></li>
+                    </ul>
+                </div>
+
+                <div id="question4" class="question-bloc">
+                    <p class="question-texte">4. Quelle est la capitale du Brésil ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q4" value="São Paulo"> São Paulo</label></li>
+                        <li><label><input type="radio" name="q4" value="Rio de Janeiro"> Rio de Janeiro</label></li>
+                        <li><label><input type="radio" name="q4" value="Brasília"> Brasília</label></li>
+                        <li><label><input type="radio" name="q4" value="Salvador"> Salvador</label></li>
+                    </ul>
+                </div>
+
+                <div id="question5" class="question-bloc">
+                    <p class="question-texte">5. Quelle est la capitale du Canada ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q5" value="Toronto"> Toronto</label></li>
+                        <li><label><input type="radio" name="q5" value="Montréal"> Montréal</label></li>
+                        <li><label><input type="radio" name="q5" value="Ottawa"> Ottawa</label></li>
+                        <li><label><input type="radio" name="q5" value="Vancouver"> Vancouver</label></li>
+                    </ul>
+                </div>
+
+                <!-- INTERMÉDIAIRE -->
+
+                <div id="question6" class="question-bloc">
+                    <p class="question-texte">6. Quelle est la capitale de l'Australie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q6" value="Sydney"> Sydney</label></li>
+                        <li><label><input type="radio" name="q6" value="Melbourne"> Melbourne</label></li>
+                        <li><label><input type="radio" name="q6" value="Canberra"> Canberra</label></li>
+                        <li><label><input type="radio" name="q6" value="Brisbane"> Brisbane</label></li>
+                    </ul>
+                </div>
+
+                <div id="question7" class="question-bloc">
+                    <p class="question-texte">7. Quelle est la capitale de l'Argentine ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q7" value="Córdoba"> Córdoba</label></li>
+                        <li><label><input type="radio" name="q7" value="Buenos Aires"> Buenos Aires</label></li>
+                        <li><label><input type="radio" name="q7" value="Mendoza"> Mendoza</label></li>
+                        <li><label><input type="radio" name="q7" value="Rosario"> Rosario</label></li>
+                    </ul>
+                </div>
+
+                <div id="question8" class="question-bloc">
+                    <p class="question-texte">8. Quelle est la capitale de l'Inde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q8" value="Mumbai"> Mumbai</label></li>
+                        <li><label><input type="radio" name="q8" value="Kolkata"> Kolkata</label></li>
+                        <li><label><input type="radio" name="q8" value="New Delhi"> New Delhi</label></li>
+                        <li><label><input type="radio" name="q8" value="Chennai"> Chennai</label></li>
+                    </ul>
+                </div>
+
+                <div id="question9" class="question-bloc">
+                    <p class="question-texte">9. Quelle est la capitale de la Suisse ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q9" value="Genève"> Genève</label></li>
+                        <li><label><input type="radio" name="q9" value="Zurich"> Zurich</label></li>
+                        <li><label><input type="radio" name="q9" value="Berne"> Berne</label></li>
+                        <li><label><input type="radio" name="q9" value="Lausanne"> Lausanne</label></li>
+                    </ul>
+                </div>
+
+                <div id="question10" class="question-bloc">
+                    <p class="question-texte">10. Quelle est la capitale de la Turquie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q10" value="Istanbul"> Istanbul</label></li>
+                        <li><label><input type="radio" name="q10" value="Izmir"> Izmir</label></li>
+                        <li><label><input type="radio" name="q10" value="Ankara"> Ankara</label></li>
+                        <li><label><input type="radio" name="q10" value="Bursa"> Bursa</label></li>
+                    </ul>
+                </div>
+
+                <!-- DIFFICILE -->
+
+                <div id="question11" class="question-bloc">
+                    <p class="question-texte">11. Quelle est la capitale du Kazakhstan ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q11" value="Almaty"> Almaty</label></li>
+                        <li><label><input type="radio" name="q11" value="Astana"> Astana</label></li>
+                        <li><label><input type="radio" name="q11" value="Chymkent"> Chymkent</label></li>
+                        <li><label><input type="radio" name="q11" value="Karaganda"> Karaganda</label></li>
+                    </ul>
+                </div>
+
+                <div id="question12" class="question-bloc">
+                    <p class="question-texte">12. Quelle est la capitale du Myanmar ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q12" value="Rangoun"> Rangoun</label></li>
+                        <li><label><input type="radio" name="q12" value="Mandalay"> Mandalay</label></li>
+                        <li><label><input type="radio" name="q12" value="Naypyidaw"> Naypyidaw</label></li>
+                        <li><label><input type="radio" name="q12" value="Bago"> Bago</label></li>
+                    </ul>
+                </div>
+
+                <div id="question13" class="question-bloc">
+                    <p class="question-texte">13. Quelle est la capitale du Sri Lanka ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q13" value="Colombo"> Colombo</label></li>
+                        <li><label><input type="radio" name="q13" value="Kandy"> Kandy</label></li>
+                        <li><label><input type="radio" name="q13" value="Sri Jayawardenepura Kotte"> Sri Jayawardenepura Kotte</label></li>
+                        <li><label><input type="radio" name="q13" value="Galle"> Galle</label></li>
+                    </ul>
+                </div>
+
+                <div id="question14" class="question-bloc">
+                    <p class="question-texte">14. Quelle est la capitale de la Bolivie (siège du gouvernement) ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q14" value="Sucre"> Sucre</label></li>
+                        <li><label><input type="radio" name="q14" value="La Paz"> La Paz</label></li>
+                        <li><label><input type="radio" name="q14" value="Santa Cruz"> Santa Cruz</label></li>
+                        <li><label><input type="radio" name="q14" value="Cochabamba"> Cochabamba</label></li>
+                    </ul>
+                </div>
+
+                <div id="question15" class="question-bloc">
+                    <p class="question-texte">15. Quelle est la capitale du Bhoutan ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q15" value="Paro"> Paro</label></li>
+                        <li><label><input type="radio" name="q15" value="Punakha"> Punakha</label></li>
+                        <li><label><input type="radio" name="q15" value="Thimphu"> Thimphu</label></li>
+                        <li><label><input type="radio" name="q15" value="Wangdue"> Wangdue</label></li>
+                    </ul>
+                </div>
+
+                <!-- IMPOSSIBLE -->
+
+                <div id="question16" class="question-bloc">
+                    <p class="question-texte">16. Quelle est la capitale des Îles Marshall ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q16" value="Palikir"> Palikir</label></li>
+                        <li><label><input type="radio" name="q16" value="Majuro"> Majuro</label></li>
+                        <li><label><input type="radio" name="q16" value="Funafuti"> Funafuti</label></li>
+                        <li><label><input type="radio" name="q16" value="Tarawa"> Tarawa</label></li>
+                    </ul>
+                </div>
+
+                <div id="question17" class="question-bloc">
+                    <p class="question-texte">17. Quelle est la capitale de la Micronésie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q17" value="Palikir"> Palikir</label></li>
+                        <li><label><input type="radio" name="q17" value="Apia"> Apia</label></li>
+                        <li><label><input type="radio" name="q17" value="Ngerulmud"> Ngerulmud</label></li>
+                        <li><label><input type="radio" name="q17" value="Yaren"> Yaren</label></li>
+                    </ul>
+                </div>
+
+                <div id="question18" class="question-bloc">
+                    <p class="question-texte">18. Quelle est la capitale du Nauru ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q18" value="Funafuti"> Funafuti</label></li>
+                        <li><label><input type="radio" name="q18" value="Yaren"> Yaren</label></li>
+                        <li><label><input type="radio" name="q18" value="Ngerulmud"> Ngerulmud</label></li>
+                        <li><label><input type="radio" name="q18" value="Alofi"> Alofi</label></li>
+                    </ul>
+                </div>
+
+                <div id="question19" class="question-bloc">
+                    <p class="question-texte">19. Quelle est la capitale des Îles Féroé ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q19" value="Akureyri"> Akureyri</label></li>
+                        <li><label><input type="radio" name="q19" value="Tórshavn"> Tórshavn</label></li>
+                        <li><label><input type="radio" name="q19" value="Nuuk"> Nuuk</label></li>
+                        <li><label><input type="radio" name="q19" value="Longyearbyen"> Longyearbyen</label></li>
+                    </ul>
+                </div>
+
+                <div id="question20" class="question-bloc">
+                    <p class="question-texte">20. Quelle est la capitale du Palau ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q20" value="Koror"> Koror</label></li>
+                        <li><label><input type="radio" name="q20" value="Ngerulmud"> Ngerulmud</label></li>
+                        <li><label><input type="radio" name="q20" value="Majuro"> Majuro</label></li>
+                        <li><label><input type="radio" name="q20" value="Palikir"> Palikir</label></li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <p id="score" class="score"></p>
+                    <p>
+                        <button type="submit" id="btn-valider" class="btn-val"> Valider mes reponses</button>
+                        <button type="submit" id="btn-reset" class="btn-res"> Recommencer </button>
+                    </p>
+                </div>
+            </form>  
+        </main>
+        
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-email">
+                📧 <a href="mailto:nathantaka61@gmail.com" target="_blank">nathantaka61@gmail.com</a>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/TakaNathan" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" width="22" height="22">
+                </a>
+                <a href="https://instagram.com/mr_tnt237" target="_blank" aria-label="Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" width="22" height="22">
+                </a>
+                <a href="https://x.com/MrTNT237" target="_blank" aria-label="X (Twitter)">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="22" height="22">
+                </a>
+            <a href="https://linkedin.com/in/nathan-taka-3999683b3" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" width="22" height="22">
+                </a>
+            </div>
+            <p class="footer-copy">© 2026 Nathan Taka Tsaga — Tous droits réservés</p>
+        </div>
+</footer>
+</body>
+</html>

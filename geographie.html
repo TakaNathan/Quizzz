@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="quiz.js" defer></script>
+    <script src="geographie.js" defer></script>
+    <title>Quiz Géographie</title>
+</head>
+<body class="questions">
+    <header>
+        <h2 style="font-size: 40px;">Quiz sur la Géographie</h2>
+        <div>
+            <button type="button" id="home" onclick="window.location.href='index.html'" class="nav-in"> Accueil </button> 
+            <button type="button" id="btn-Capital" onclick="window.location.href='capitales.html'" class="nav-in"> Capitales </button> 
+            <button type="button" id="btn-Perso" onclick="window.location.href='personnalites.html'" class="nav-in"> Personnalités </button> 
+            <button type="button" onclick="window.location.href='sciences.html'" class="nav-in"> Sciences</button>
+        </div>
+    </header>
+    <div class="content">
+        <nav></nav>
+        <main>
+            <form id="questionformgeo">
+
+                <!-- FACILE -->
+
+                <div id="question1" class="question-bloc">
+                    <p class="question-texte">1. Quel est le plus grand océan du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q1" value="Océan Atlantique"> Océan Atlantique</label></li>
+                        <li><label><input type="radio" name="q1" value="Océan Pacifique"> Océan Pacifique</label></li>
+                        <li><label><input type="radio" name="q1" value="Océan Indien"> Océan Indien</label></li>
+                        <li><label><input type="radio" name="q1" value="Océan Arctique"> Océan Arctique</label></li>
+                    </ul>
+                </div>
+
+                <div id="question2" class="question-bloc">
+                    <p class="question-texte">2. Sur quel continent se trouve le désert du Sahara ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q2" value="Asie"> Asie</label></li>
+                        <li><label><input type="radio" name="q2" value="Amérique du Sud"> Amérique du Sud</label></li>
+                        <li><label><input type="radio" name="q2" value="Afrique"> Afrique</label></li>
+                        <li><label><input type="radio" name="q2" value="Australie"> Australie</label></li>
+                    </ul>
+                </div>
+
+                <div id="question3" class="question-bloc">
+                    <p class="question-texte">3. Quel est le plus long fleuve du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q3" value="L'Amazone"> L'Amazone</label></li>
+                        <li><label><input type="radio" name="q3" value="Le Mississippi"> Le Mississippi</label></li>
+                        <li><label><input type="radio" name="q3" value="Le Nil"> Le Nil</label></li>
+                        <li><label><input type="radio" name="q3" value="Le Yangtsé"> Le Yangtsé</label></li>
+                    </ul>
+                </div>
+
+                <div id="question4" class="question-bloc">
+                    <p class="question-texte">4. Quel est le plus grand pays du monde par sa superficie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q4" value="Canada"> Canada</label></li>
+                        <li><label><input type="radio" name="q4" value="États-Unis"> États-Unis</label></li>
+                        <li><label><input type="radio" name="q4" value="Chine"> Chine</label></li>
+                        <li><label><input type="radio" name="q4" value="Russie"> Russie</label></li>
+                    </ul>
+                </div>
+
+                <div id="question5" class="question-bloc">
+                    <p class="question-texte">5. Sur quel continent se trouve le mont Everest ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q5" value="Europe"> Europe</label></li>
+                        <li><label><input type="radio" name="q5" value="Afrique"> Afrique</label></li>
+                        <li><label><input type="radio" name="q5" value="Asie"> Asie</label></li>
+                        <li><label><input type="radio" name="q5" value="Amérique du Sud"> Amérique du Sud</label></li>
+                    </ul>
+                </div>
+
+                <!-- INTERMÉDIAIRE -->
+
+                <div id="question6" class="question-bloc">
+                    <p class="question-texte">6. Quel est le plus grand lac d'eau douce du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q6" value="Lac Victoria"> Lac Victoria</label></li>
+                        <li><label><input type="radio" name="q6" value="Lac Supérieur"> Lac Supérieur</label></li>
+                        <li><label><input type="radio" name="q6" value="Lac Baïkal"> Lac Baïkal</label></li>
+                        <li><label><input type="radio" name="q6" value="Lac Huron"> Lac Huron</label></li>
+                    </ul>
+                </div>
+
+                <div id="question7" class="question-bloc">
+                    <p class="question-texte">7. Quel détroit sépare l'Europe de l'Afrique ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q7" value="Détroit de Bosphore"> Détroit de Bosphore</label></li>
+                        <li><label><input type="radio" name="q7" value="Détroit de Magellan"> Détroit de Magellan</label></li>
+                        <li><label><input type="radio" name="q7" value="Détroit de Gibraltar"> Détroit de Gibraltar</label></li>
+                        <li><label><input type="radio" name="q7" value="Détroit d'Ormuz"> Détroit d'Ormuz</label></li>
+                    </ul>
+                </div>
+
+                <div id="question8" class="question-bloc">
+                    <p class="question-texte">8. Dans quel pays se trouve le lac Titicaca, le plus haut lac navigable du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q8" value="Chili"> Chili</label></li>
+                        <li><label><input type="radio" name="q8" value="Pérou et Bolivie"> Pérou et Bolivie</label></li>
+                        <li><label><input type="radio" name="q8" value="Argentine"> Argentine</label></li>
+                        <li><label><input type="radio" name="q8" value="Équateur"> Équateur</label></li>
+                    </ul>
+                </div>
+
+                <div id="question9" class="question-bloc">
+                    <p class="question-texte">9. Quel est le point le plus bas de la surface terrestre ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q9" value="Lac Assal"> Lac Assal</label></li>
+                        <li><label><input type="radio" name="q9" value="Mer Morte"> Mer Morte</label></li>
+                        <li><label><input type="radio" name="q9" value="Fosse des Mariannes"> Fosse des Mariannes</label></li>
+                        <li><label><input type="radio" name="q9" value="Dépression du Qattara"> Dépression du Qattara</label></li>
+                    </ul>
+                </div>
+
+                <div id="question10" class="question-bloc">
+                    <p class="question-texte">10. Quelle chaîne de montagnes sépare l'Europe de l'Asie en Russie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q10" value="Les Alpes"> Les Alpes</label></li>
+                        <li><label><input type="radio" name="q10" value="Le Caucase"> Le Caucase</label></li>
+                        <li><label><input type="radio" name="q10" value="L'Oural"> L'Oural</label></li>
+                        <li><label><input type="radio" name="q10" value="Les Carpates"> Les Carpates</label></li>
+                    </ul>
+                </div>
+
+                <!-- DIFFICILE -->
+
+                <div id="question11" class="question-bloc">
+                    <p class="question-texte">11. Quel est le nom du plus long récif corallien du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q11" value="Récif de Nouvelle-Calédonie"> Récif de Nouvelle-Calédonie</label></li>
+                        <li><label><input type="radio" name="q11" value="Grande Barrière de Corail"> Grande Barrière de Corail</label></li>
+                        <li><label><input type="radio" name="q11" value="Récif mésoaméricain"> Récif mésoaméricain</label></li>
+                        <li><label><input type="radio" name="q11" value="Récif des Maldives"> Récif des Maldives</label></li>
+                    </ul>
+                </div>
+
+                <div id="question12" class="question-bloc">
+                    <p class="question-texte">12. Dans quelle mer se trouvent les îles Baléares ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q12" value="Mer Adriatique"> Mer Adriatique</label></li>
+                        <li><label><input type="radio" name="q12" value="Mer Tyrrhénienne"> Mer Tyrrhénienne</label></li>
+                        <li><label><input type="radio" name="q12" value="Mer Méditerranée"> Mer Méditerranée</label></li>
+                        <li><label><input type="radio" name="q12" value="Mer Égée"> Mer Égée</label></li>
+                    </ul>
+                </div>
+
+                <div id="question13" class="question-bloc">
+                    <p class="question-texte">13. Quel fleuve traverse la ville de Budapest en Hongrie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q13" value="Le Rhin"> Le Rhin</label></li>
+                        <li><label><input type="radio" name="q13" value="La Loire"> La Loire</label></li>
+                        <li><label><input type="radio" name="q13" value="Le Danube"> Le Danube</label></li>
+                        <li><label><input type="radio" name="q13" value="La Vistule"> La Vistule</label></li>
+                    </ul>
+                </div>
+
+                <div id="question14" class="question-bloc">
+                    <p class="question-texte">14. Quelle est la superficie approximative du continent antarctique en km² ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q14" value="7 millions km²"> 7 millions km²</label></li>
+                        <li><label><input type="radio" name="q14" value="14 millions km²"> 14 millions km²</label></li>
+                        <li><label><input type="radio" name="q14" value="20 millions km²"> 20 millions km²</label></li>
+                        <li><label><input type="radio" name="q14" value="30 millions km²"> 30 millions km²</label></li>
+                    </ul>
+                </div>
+
+                <div id="question15" class="question-bloc">
+                    <p class="question-texte">15. Quel pays possède le plus grand nombre d'îles au monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q15" value="Indonésie"> Indonésie</label></li>
+                        <li><label><input type="radio" name="q15" value="Philippines"> Philippines</label></li>
+                        <li><label><input type="radio" name="q15" value="Suède"> Suède</label></li>
+                        <li><label><input type="radio" name="q15" value="Canada"> Canada</label></li>
+                    </ul>
+                </div>
+
+                <!-- IMPOSSIBLE -->
+
+                <div id="question16" class="question-bloc">
+                    <p class="question-texte">16. Quel est le nom de la fosse océanique la plus profonde de l'océan Atlantique ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q16" value="Fosse de Porto Rico"> Fosse de Porto Rico</label></li>
+                        <li><label><input type="radio" name="q16" value="Fosse des Mariannes"> Fosse des Mariannes</label></li>
+                        <li><label><input type="radio" name="q16" value="Fosse de Romanche"> Fosse de Romanche</label></li>
+                        <li><label><input type="radio" name="q16" value="Fosse de Java"> Fosse de Java</label></li>
+                    </ul>
+                </div>
+
+                <div id="question17" class="question-bloc">
+                    <p class="question-texte">17. Quel est le nom du plus grand désert froid du monde ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q17" value="Désert de Gobi"> Désert de Gobi</label></li>
+                        <li><label><input type="radio" name="q17" value="Désert Antarctique"> Désert Antarctique</label></li>
+                        <li><label><input type="radio" name="q17" value="Désert Arctique"> Désert Arctique</label></li>
+                        <li><label><input type="radio" name="q17" value="Désert de Patagonie"> Désert de Patagonie</label></li>
+                    </ul>
+                </div>
+
+                <div id="question18" class="question-bloc">
+                    <p class="question-texte">18. Quelle est la longitude exacte du méridien de Greenwich ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q18" value="45° Est"> 45° Est</label></li>
+                        <li><label><input type="radio" name="q18" value="180° Ouest"> 180° Ouest</label></li>
+                        <li><label><input type="radio" name="q18" value="0°"> 0°</label></li>
+                        <li><label><input type="radio" name="q18" value="90° Ouest"> 90° Ouest</label></li>
+                    </ul>
+                </div>
+
+                <div id="question19" class="question-bloc">
+                    <p class="question-texte">19. Quel est le nom du plus petit État souverain du monde par superficie ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q19" value="Monaco"> Monaco</label></li>
+                        <li><label><input type="radio" name="q19" value="Nauru"> Nauru</label></li>
+                        <li><label><input type="radio" name="q19" value="Saint-Marin"> Saint-Marin</label></li>
+                        <li><label><input type="radio" name="q19" value="Vatican"> Vatican</label></li>
+                    </ul>
+                </div>
+
+                <div id="question20" class="question-bloc">
+                    <p class="question-texte">20. Quel archipel volcanique isolé, situé à plus de 3 000 km de tout continent, est administré par l'Équateur ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q20" value="Îles Canaries"> Îles Canaries</label></li>
+                        <li><label><input type="radio" name="q20" value="Îles Galápagos"> Îles Galápagos</label></li>
+                        <li><label><input type="radio" name="q20" value="Îles Fidji"> Îles Fidji</label></li>
+                        <li><label><input type="radio" name="q20" value="Îles Açores"> Îles Açores</label></li>
+                    </ul>
+                </div>
+
+                <div class="button">
+                    <p id="scoreGeo" class="score"></p>
+                    <p>
+                        <button type="submit" id="btn-valider-Geo" class="btn-val"> Valider mes réponses</button>
+                        <button type="submit" id="btn-reset-Geo" class="btn-res"> Recommencer </button>
+                    </p>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+        <p class="footer-email">
+            📧 <a href="mailto:nathantaka61@gmail.com" target="_blank">nathantaka61@gmail.com</a>
+        </p>
+        <div class="footer-socials">
+            <a href="https://github.com/TakaNathan" target="_blank" aria-label="GitHub">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" width="22" height="22">
+            </a>
+            <a href="https://instagram.com/mr_tnt237" target="_blank" aria-label="Instagram">
+                <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" width="22" height="22">
+            </a>
+            <a href="https://x.com/MrTNT237" target="_blank" aria-label="X (Twitter)">
+                <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="22" height="22">
+            </a>
+           <a href="https://linkedin.com/in/nathan-taka-3999683b3" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" width="22" height="22">
+            </a>
+        </div>
+        <p class="footer-copy">© 2026 Nathan Taka Tsaga — Tous droits réservés</p>
+    </div>
+    </footer>
+</body>
+</html>

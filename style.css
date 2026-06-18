@@ -1,0 +1,352 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e7e3e3a4;
+    height: auto;
+    width: 30em;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    border: 2px black solid;
+    box-shadow:  6px 6px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    
+}
+
+.index{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url('questionmark2.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover; /* L'image couvrira toute la zone */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    background-position: center center; /* Centre l'image */
+    background-color: rgb(221, 210, 231);
+}
+
+header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px 20px 10px;
+
+    /* ✅ Ces 3 lignes le rendent fixe */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    /* ✅ Fond opaque obligatoire sinon les questions passent en dessous et se voient */
+         background-image: url('questionmark2.png'); /* Remplacez par le chemin de votre image */
+    background-size:auto; /* L'image couvrira toute la zone */
+    background-repeat: repeat; /* Empêche l'image de se répéter */
+    background-position: center center; /* Centre l'image */
+}
+
+.questions{
+      background-color: rgb(221, 210, 231);
+     padding: 0px 0px 20px 0px;
+     background-image: url('questionmark2.png'); /* Remplacez par le chemin de votre image */
+    background-size:auto; /* L'image couvrira toute la zone */
+    background-repeat: repeat; /* Empêche l'image de se répéter */
+    background-position: center center; /* Centre l'image */
+
+     
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    padding-top: 10px;
+    
+}
+
+nav{
+    
+}
+main{
+    
+    padding: 0px 20px 0px 0px;
+}
+/*css du bloc de chaque question*/
+.question-bloc {
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+  border: 2px solid transparent;
+  margin-bottom: 0.5rem;
+  transition: transform .18s, box-shadow .18s;
+}
+.question-bloc:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+
+.question-texte {
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  line-height: 1.45;
+  color: #1a1a2e;
+}
+
+.choix-liste { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+
+.choix-liste li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all .15s;
+  border: 1.5px solid transparent;
+  background: #fff;
+}
+
+.choix-liste li input[type="radio"] {
+  width: 15px; height: 15px; flex-shrink: 0; cursor: pointer;
+}
+
+/* css du libelle de chaque question*/
+
+/* ===== FACILE — menthe fraîche ===== */
+#question1, #question2, #question3, #question4, #question5 {
+  background: #E8FAF3; border-color: #A7E6C8;
+}
+#question1 .question-texte, #question2 .question-texte,
+#question3 .question-texte, #question4 .question-texte,
+#question5 .question-texte { color: #064E3B; }
+
+#question1 .choix-liste li label, #question2 .choix-liste li label,
+#question3 .choix-liste li label, #question4 .choix-liste li label,
+#question5 .choix-liste li label { border-color: #A7E6C8; color: #065F46; }
+
+#question1 .choix-liste li label:hover, #question2 .choix-liste li label:hover,
+#question3 .choix-liste li label:hover, #question4 .choix-liste li label:hover,
+#question5 .choix-liste li label:hover {
+  background: #D1FAE5; border-color: #059669; color: #064E3B;
+}
+
+/* ===== INTERMÉDIAIRE — ciel azur ===== */
+#question6, #question7, #question8, #question9, #question10 {
+  background: #EBF4FF; border-color: #93C5FD;
+}
+#question6 .question-texte, #question7 .question-texte,
+#question8 .question-texte, #question9 .question-texte,
+#question10 .question-texte { color: #1E3A5F; }
+
+#question6 .choix-liste li label, #question7 .choix-liste li label,
+#question8 .choix-liste li label, #question9 .choix-liste li label,
+#question10 .choix-liste li label { border-color: #93C5FD; color: #1E40AF; }
+
+#question6 .choix-liste li label:hover, #question7 .choix-liste li label:hover,
+#question8 .choix-liste li label:hover, #question9 .choix-liste li label:hover,
+#question10 .choix-liste li label:hover {
+  background: #DBEAFE; border-color: #3B82F6; color: #1E3A5F;
+}
+
+/* ===== DIFFICILE — abricot chaud ===== */
+#question11, #question12, #question13, #question14, #question15 {
+  background: #FFF4E6; border-color: #FBB97C;
+}
+#question11 .question-texte, #question12 .question-texte,
+#question13 .question-texte, #question14 .question-texte,
+#question15 .question-texte { color: #431407; }
+
+#question11 .choix-liste li label, #question12 .choix-liste li label,
+#question13 .choix-liste li label, #question14 .choix-liste li label,
+#question15 .choix-liste li label { border-color: #FBB97C; color: #9A3412; }
+
+#question11 .choix-liste li label:hover, #question12 .choix-liste li label:hover,
+#question13 .choix-liste li label:hover, #question14 .choix-liste li label:hover,
+#question15 .choix-liste li label:hover {
+  background: #FFEDD5; border-color: #F97316; color: #431407;
+}
+
+/* ===== IMPOSSIBLE — framboise vive ===== */
+#question16, #question17, #question18, #question19, #question20 {
+  background: #FFF0F5;
+  border-color: #F9A8D4;
+  animation: throb 2.2s ease-in-out infinite;
+}
+#question16 .question-texte, #question17 .question-texte,
+#question18 .question-texte, #question19 .question-texte,
+#question20 .question-texte { color: #500724; }
+
+#question16 .choix-liste li label, #question17 .choix-liste li label,
+#question18 .choix-liste li label, #question19 .choix-liste li label,
+#question20 .choix-liste li label { border-color: #F9A8D4; color: #9D174D; }
+
+#question16 .choix-liste li label:hover, #question17 .choix-liste li label:hover,
+#question18 .choix-liste li label:hover, #question19 .choix-liste li label:hover,
+#question20 .choix-liste li label:hover {
+  background: #FCE7F3; border-color: #EC4899; color: #500724;
+}
+
+@keyframes throb {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(236,72,153,0); border-color: #F9A8D4; }
+  50% { box-shadow: 0 0 14px 3px rgba(236,72,153,.18); border-color: #EC4899; }
+}
+
+/* ===== BOUTON VALIDER ===== */
+.nav:hover { background: #2d2d4e; transform: scale(1.01); }
+.nav:active { transform: scale(.97); }
+.nav {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1.2rem;
+  background: #1a1a2e;
+  color: #fff;
+  letter-spacing: .5px;
+  transition: background .2s, transform .15s;
+}
+
+.nav-in:hover { background: #2d2d4e; transform: scale(1.01); }
+.nav-in:active { transform: scale(.97); }
+.nav-in{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  background: #1a1a2e;
+  color: #fff;
+  letter-spacing: .5px;
+  transition: background .2s, transform .15s;
+}
+.btn-val:active { transform: scale(.97); }
+.btn-val:hover { background: #2d2d4e; transform: scale(1.01); }
+.btn-res:active { transform: scale(.97); }
+.btn-res:hover { background: #2d2d4e; transform: scale(1.01); }
+.btn-val,.btn-res{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px;
+  border: none;
+  width: 50%;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  background: #1a1a2e;
+  color: #fff;
+  letter-spacing: .5px;
+  transition: background .2s, transform .15s;
+  align-self: center;
+
+}
+
+#questionform{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.choix-liste li label.bonne {
+  background: #D1FAE5 !important;
+  border-color: #059669 !important;
+  color: #064E3B !important;
+ } /* style pour la bonne reponse */
+
+.choix-liste li label.mauvaise {
+  background: #FEE2E2 !important;
+  border-color: #DC2626 !important;
+  color: #7F1D1D !important;
+  animation: shake .4s ease;
+}
+/* style pour la mauvaise reponse */
+
+.button {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+/*Footer*/
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+
+    /* Évite que le footer remonte sur le contenu */
+    position: relative;
+    z-index: 0;
+    clear: both;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-email a {
+    color: #C4B5FD;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color .15s;
+}
+.footer-email a:hover {
+    color: #fff;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2d2d4e;
+    border: 1px solid #3d3d6e;
+    transition: background-color .15s, transform .15s;
+}
+.footer-socials a:hover {
+    background-color: #3d3d6e;
+    transform: translateY(-2px);
+}
+
+.footer-copy {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #6B7280;
+}

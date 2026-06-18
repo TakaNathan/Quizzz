@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="quiz.js" defer></script>
+    <script src="sciences.js" defer></script>
+    <title>Quiz Sciences</title>
+</head>
+<body class="questions">
+    <header>
+        <h2 style="font-size: 40px;">Quiz sur les Sciences</h2>
+        <div>
+            <button type="button" id="home" onclick="window.location.href='index.html'" class="nav-in"> Accueil </button>
+            <button type="button" id="btn-Capital" onclick="window.location.href='capitales.html'" class="nav-in"> Capitales </button>
+            <button type="button" id="btn-Perso" onclick="window.location.href='personnalites.html'" class="nav-in"> Personnalités </button>
+            <button type="button" onclick="window.location.href='geographie.html'" class="nav-in"> Geographie </button>
+        </div>
+    </header>
+    <div class="content">
+        <nav></nav>
+        <main>
+            <form id="questionformsciences">
+
+                <!-- FACILE -->
+
+                <div id="question1" class="question-bloc">
+                    <p class="question-texte">1. Quelle est la planète la plus proche du Soleil ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q1" value="Vénus"> Vénus</label></li>
+                        <li><label><input type="radio" name="q1" value="Mercure"> Mercure</label></li>
+                        <li><label><input type="radio" name="q1" value="Mars"> Mars</label></li>
+                        <li><label><input type="radio" name="q1" value="Terre"> Terre</label></li>
+                    </ul>
+                </div>
+
+                <div id="question2" class="question-bloc">
+                    <p class="question-texte">2. Combien d'os possède le corps humain adulte ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q2" value="106"> 106</label></li>
+                        <li><label><input type="radio" name="q2" value="206"> 206</label></li>
+                        <li><label><input type="radio" name="q2" value="306"> 306</label></li>
+                        <li><label><input type="radio" name="q2" value="256"> 256</label></li>
+                    </ul>
+                </div>
+
+                <div id="question3" class="question-bloc">
+                    <p class="question-texte">3. Quelle est la formule chimique de l'eau ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q3" value="CO2"> CO2</label></li>
+                        <li><label><input type="radio" name="q3" value="O2"> O2</label></li>
+                        <li><label><input type="radio" name="q3" value="H2O"> H2O</label></li>
+                        <li><label><input type="radio" name="q3" value="NaCl"> NaCl</label></li>
+                    </ul>
+                </div>
+
+                <div id="question4" class="question-bloc">
+                    <p class="question-texte">4. Quel organe du corps humain produit l'insuline ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q4" value="Le foie"> Le foie</label></li>
+                        <li><label><input type="radio" name="q4" value="Le pancréas"> Le pancréas</label></li>
+                        <li><label><input type="radio" name="q4" value="Les reins"> Les reins</label></li>
+                        <li><label><input type="radio" name="q4" value="L'estomac"> L'estomac</label></li>
+                    </ul>
+                </div>
+
+                <div id="question5" class="question-bloc">
+                    <p class="question-texte">5. Quelle est la vitesse de la lumière dans le vide (en km/s) ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q5" value="150 000 km/s"> 150 000 km/s</label></li>
+                        <li><label><input type="radio" name="q5" value="300 000 km/s"> 300 000 km/s</label></li>
+                        <li><label><input type="radio" name="q5" value="450 000 km/s"> 450 000 km/s</label></li>
+                        <li><label><input type="radio" name="q5" value="100 000 km/s"> 100 000 km/s</label></li>
+                    </ul>
+                </div>
+
+                <!-- INTERMÉDIAIRE -->
+
+                <div id="question6" class="question-bloc">
+                    <p class="question-texte">6. Quel élément chimique a pour symbole "Fe" dans le tableau périodique ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q6" value="Fluor"> Fluor</label></li>
+                        <li><label><input type="radio" name="q6" value="Fer"> Fer</label></li>
+                        <li><label><input type="radio" name="q6" value="Francium"> Francium</label></li>
+                        <li><label><input type="radio" name="q6" value="Fermium"> Fermium</label></li>
+                    </ul>
+                </div>
+
+                <div id="question7" class="question-bloc">
+                    <p class="question-texte">7. Quelle loi stipule que la force exercée sur un objet est égale à sa masse multipliée par son accélération ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q7" value="Loi de Coulomb"> Loi de Coulomb</label></li>
+                        <li><label><input type="radio" name="q7" value="Loi de Newton"> Loi de Newton</label></li>
+                        <li><label><input type="radio" name="q7" value="Loi d'Ohm"> Loi d'Ohm</label></li>
+                        <li><label><input type="radio" name="q7" value="Loi de Faraday"> Loi de Faraday</label></li>
+                    </ul>
+                </div>
+
+                <div id="question8" class="question-bloc">
+                    <p class="question-texte">8. De combien de paires de chromosomes le génome humain est-il composé ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q8" value="20 paires"> 20 paires</label></li>
+                        <li><label><input type="radio" name="q8" value="23 paires"> 23 paires</label></li>
+                        <li><label><input type="radio" name="q8" value="26 paires"> 26 paires</label></li>
+                        <li><label><input type="radio" name="q8" value="46 paires"> 46 paires</label></li>
+                    </ul>
+                </div>
+
+                <div id="question9" class="question-bloc">
+                    <p class="question-texte">9. Quel est le gaz le plus abondant dans l'atmosphère terrestre ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q9" value="Oxygène"> Oxygène</label></li>
+                        <li><label><input type="radio" name="q9" value="Dioxyde de carbone"> Dioxyde de carbone</label></li>
+                        <li><label><input type="radio" name="q9" value="Azote"> Azote</label></li>
+                        <li><label><input type="radio" name="q9" value="Argon"> Argon</label></li>
+                    </ul>
+                </div>
+
+                <div id="question10" class="question-bloc">
+                    <p class="question-texte">10. Quelle est la température d'ébullition de l'eau à pression atmosphérique normale ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q10" value="90°C"> 90°C</label></li>
+                        <li><label><input type="radio" name="q10" value="95°C"> 95°C</label></li>
+                        <li><label><input type="radio" name="q10" value="100°C"> 100°C</label></li>
+                        <li><label><input type="radio" name="q10" value="110°C"> 110°C</label></li>
+                    </ul>
+                </div>
+
+                <!-- DIFFICILE -->
+
+                <div id="question11" class="question-bloc">
+                    <p class="question-texte">11. Quel est le numéro atomique de l'or dans le tableau périodique ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q11" value="47"> 47</label></li>
+                        <li><label><input type="radio" name="q11" value="79"> 79</label></li>
+                        <li><label><input type="radio" name="q11" value="82"> 82</label></li>
+                        <li><label><input type="radio" name="q11" value="92"> 92</label></li>
+                    </ul>
+                </div>
+
+                <div id="question12" class="question-bloc">
+                    <p class="question-texte">12. Quelle particule subatomique ne possède aucune charge électrique ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q12" value="Proton"> Proton</label></li>
+                        <li><label><input type="radio" name="q12" value="Électron"> Électron</label></li>
+                        <li><label><input type="radio" name="q12" value="Neutron"> Neutron</label></li>
+                        <li><label><input type="radio" name="q12" value="Positron"> Positron</label></li>
+                    </ul>
+                </div>
+
+                <div id="question13" class="question-bloc">
+                    <p class="question-texte">13. Quelle est la demi-vie approximative du carbone 14 utilisé en datation ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q13" value="1 730 ans"> 1 730 ans</label></li>
+                        <li><label><input type="radio" name="q13" value="5 730 ans"> 5 730 ans</label></li>
+                        <li><label><input type="radio" name="q13" value="12 500 ans"> 12 500 ans</label></li>
+                        <li><label><input type="radio" name="q13" value="57 300 ans"> 57 300 ans</label></li>
+                    </ul>
+                </div>
+
+                <div id="question14" class="question-bloc">
+                    <p class="question-texte">14. Quel type d'onde lumineuse a la fréquence la plus élevée dans le spectre visible ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q14" value="Rouge"> Rouge</label></li>
+                        <li><label><input type="radio" name="q14" value="Jaune"> Jaune</label></li>
+                        <li><label><input type="radio" name="q14" value="Vert"> Vert</label></li>
+                        <li><label><input type="radio" name="q14" value="Violet"> Violet</label></li>
+                    </ul>
+                </div>
+
+                <div id="question15" class="question-bloc">
+                    <p class="question-texte">15. Quelle est la constante de Planck (en joule-seconde, ordre de grandeur) ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q15" value="6,626 × 10⁻³⁴ J·s"> 6,626 × 10⁻³⁴ J·s</label></li>
+                        <li><label><input type="radio" name="q15" value="6,626 × 10⁻²⁴ J·s"> 6,626 × 10⁻²⁴ J·s</label></li>
+                        <li><label><input type="radio" name="q15" value="9,109 × 10⁻³¹ J·s"> 9,109 × 10⁻³¹ J·s</label></li>
+                        <li><label><input type="radio" name="q15" value="1,602 × 10⁻¹⁹ J·s"> 1,602 × 10⁻¹⁹ J·s</label></li>
+                    </ul>
+                </div>
+
+                <!-- IMPOSSIBLE -->
+
+                <div id="question16" class="question-bloc">
+                    <p class="question-texte">16. Quelle est la masse au repos d'un électron en kilogrammes ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q16" value="9,109 × 10⁻³¹ kg"> 9,109 × 10⁻³¹ kg</label></li>
+                        <li><label><input type="radio" name="q16" value="1,672 × 10⁻²⁷ kg"> 1,672 × 10⁻²⁷ kg</label></li>
+                        <li><label><input type="radio" name="q16" value="3,346 × 10⁻²⁷ kg"> 3,346 × 10⁻²⁷ kg</label></li>
+                        <li><label><input type="radio" name="q16" value="6,022 × 10⁻²³ kg"> 6,022 × 10⁻²³ kg</label></li>
+                    </ul>
+                </div>
+
+                <div id="question17" class="question-bloc">
+                    <p class="question-texte">17. Quel phénomène physique décrit l'intrication quantique de deux particules distantes ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q17" value="Effet tunnel"> Effet tunnel</label></li>
+                        <li><label><input type="radio" name="q17" value="Non-localité quantique"> Non-localité quantique</label></li>
+                        <li><label><input type="radio" name="q17" value="Décohérence quantique"> Décohérence quantique</label></li>
+                        <li><label><input type="radio" name="q17" value="Superposition quantique"> Superposition quantique</label></li>
+                    </ul>
+                </div>
+
+                <div id="question18" class="question-bloc">
+                    <p class="question-texte">18. Quel enzyme est responsable de la réplication de l'ADN lors de la division cellulaire ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q18" value="ARN polymérase"> ARN polymérase</label></li>
+                        <li><label><input type="radio" name="q18" value="Ligase"> Ligase</label></li>
+                        <li><label><input type="radio" name="q18" value="ADN polymérase"> ADN polymérase</label></li>
+                        <li><label><input type="radio" name="q18" value="Hélicase"> Hélicase</label></li>
+                    </ul>
+                </div>
+
+                <div id="question19" class="question-bloc">
+                    <p class="question-texte">19. Quelle théorie prédit l'existence des trous noirs comme solution aux équations d'Einstein ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q19" value="Relativité restreinte"> Relativité restreinte</label></li>
+                        <li><label><input type="radio" name="q19" value="Mécanique quantique"> Mécanique quantique</label></li>
+                        <li><label><input type="radio" name="q19" value="Relativité générale"> Relativité générale</label></li>
+                        <li><label><input type="radio" name="q19" value="Théorie des cordes"> Théorie des cordes</label></li>
+                    </ul>
+                </div>
+
+                <div id="question20" class="question-bloc">
+                    <p class="question-texte">20. Quel est le nom du boson découvert au CERN en 2012, prédit par le modèle standard de la physique des particules ?</p>
+                    <ul class="choix-liste">
+                        <li><label><input type="radio" name="q20" value="Boson de Fermi"> Boson de Fermi</label></li>
+                        <li><label><input type="radio" name="q20" value="Boson de Higgs"> Boson de Higgs</label></li>
+                        <li><label><input type="radio" name="q20" value="Boson W"> Boson W</label></li>
+                        <li><label><input type="radio" name="q20" value="Boson Z"> Boson Z</label></li>
+                    </ul>
+                </div>
+
+                <div class="button">
+                    <p id="scoreSciences" class="score"></p>
+                    <p>
+                        <button type="submit" id="btn-valider-Sciences" class="btn-val"> Valider mes réponses</button>
+                        <button type="submit" id="btn-reset-Sciences" class="btn-res"> Recommencer </button>
+                    </p>
+                </div>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+            <div class="footer-content">
+            <p class="footer-email">
+                📧 <a href="mailto:nathantaka61@gmail.com" target="_blank">nathantaka61@gmail.com</a>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/TakaNathan" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" width="22" height="22">
+                </a>
+                <a href="https://instagram.com/mr_tnt237" target="_blank" aria-label="Instagram">
+                    <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" width="22" height="22">
+                </a>
+                <a href="https://x.com/MrTNT237" target="_blank" aria-label="X (Twitter)">
+                    <img src="https://cdn.simpleicons.org/x/ffffff" alt="X" width="22" height="22">
+                </a>
+            <a href="https://linkedin.com/in/nathan-taka-3999683b3" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn" width="22" height="22">
+                </a>
+            </div>
+            <p class="footer-copy">© 2026 Nathan Taka Tsaga — Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
